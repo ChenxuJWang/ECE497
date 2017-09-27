@@ -12,7 +12,8 @@ Done 1-6
 // See README requirements
 // Please put in a directory called 'hw01'
 // I'm having trouble with your code.  Please demo it in class.
-// Grade:  3/10
+//   Thanks for the demo
+// Grade:  10/10
 
 ./etch.py 
 ALSA lib pcm_hw.c:1713:(_snd_pcm_hw_open) Invalid value for card
