@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Some comments here would help
 i2cset 1 0x48 2 0x19
 i2cset 1 0x48 3 0x1b
 

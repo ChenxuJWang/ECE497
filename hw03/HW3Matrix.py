@@ -18,11 +18,11 @@ BTN2="GP0_4"
 BTN3="GP0_5"
 BTN4="GP0_6"
 
-GPIO.setup(BTN1, GPIO.IN)
-GPIO.setup(BTN2, GPIO.IN)
-GPIO.setup(BTN3, GPIO.IN)
-GPIO.setup(BTN4, GPIO.IN)
-GPIO.setup(buttonM, GPIO.IN)
+# GPIO.setup(BTN1, GPIO.IN)
+# GPIO.setup(BTN2, GPIO.IN)
+# GPIO.setup(BTN3, GPIO.IN)
+# GPIO.setup(BTN4, GPIO.IN)
+# GPIO.setup(buttonM, GPIO.IN)
 
 bus = smbus.SMBus(1)  # Use i2c bus 1
 matrix = 0x70         # Use address 0x70
