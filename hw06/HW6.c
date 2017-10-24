@@ -216,14 +216,18 @@ int main(int argc, char **argv)
         if((x != xold) || (y != yold)) {
             // printf("Updating location to %d, %d\n", x, y);
             // Set old location to green
-            location = (xold+vinfo.xoffset) * (vinfo.bits_per_pixel/8) +
-                      
-                       (yold+vinfo.yoffset) * finfo.line_length;
             int r = redd;     // 5 bits
             int g = greenn;      // 6 bits
             int b = bluee;      // 5 bits
             unsigned short int t = r<<11 | g << 5 | b;
-            *((unsigned short int*)(fbp + location)) = t;
+            for(int i=0; i<5; i+=1) {
+                for(int j=0; j<5; j+=1){
+                    location = (xold+i+vinfo.xoffset) * (vinfo.bits_per_pixel/8) +
+                       (yold+j+vinfo.yoffset) * finfo.line_length;
+                    *((unsigned short int*)(fbp + location)) = t;
+                }
+            }
+            
             // Set new location to white
             location = (x+vinfo.xoffset) * (vinfo.bits_per_pixel/8) +
                        (y+vinfo.yoffset) * finfo.line_length;
