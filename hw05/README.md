@@ -6,3 +6,7 @@ When the user drag the slider, the matrixLED.js sends the lightness value to boa
 3.background-color: green;
 
 4.Having two matrixs. One controls green and another controls red.
+
+// Comments from Prof. Yoder
+// It works!
+// Grade:  10/10

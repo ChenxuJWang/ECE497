@@ -8,3 +8,6 @@ The available commands are -w -b and integers.
 4.Type ./etch-n-sketch without any command to draw balck line on default bluish background.
 5.You can also type -w/-b followed with rgb values to set the line's color and choose between two backgrounds. Ex: ./etch-n-sketch -b 2 17 22
 
+// Comments from Prof. Yoder
+// It works!
+// Grade:  10/10
