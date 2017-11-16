@@ -1,6 +1,6 @@
-# Comments from Prof. Yoder3
-# Your ReadMe file is missing.  Please fill in the details.
-# Grade:  00/10
+# Comments from Prof. Yoder
+# Thanks for the updated README
+# Grade:  9/10
 
 I previously had trouble toggling LED in which case the LED can only be toggle once(off to on) and will remain on the whole time. I have finally figured out why... I have a typo in my code.... Anyway, it should work just fine now.
 
